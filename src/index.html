@@ -14,17 +14,17 @@
         <title>Portfólio</title>
 </head>
 
-<body class="bg-portfoliopaleta-media">
-    <nav class="bg-portfoliopaleta-escura p-0 rounded-bl-full ">
-        <div class="container my-0 grid grid-cols-12 md:grid-cols-12 items-center ">
+<body class="bg-portfoliopaleta-media min-h-screen grid grid-rows-[1fr_auto]">
+    <nav class="bg-portfoliopaleta-escura p-0 row-span-1 h-20 m-0">
+        <div class="container my-0 grid grid-cols-12 md:grid-cols-12 items-center justify-center mx-auto">
             <!-- Logo -->
-            <div class="flex items-center col-span-4 md:col-span-4 ml-20  lg:mr-28">
+            <div class="flex items-center col-span-4 md:col-span-4  lg:mr-28">
                 <div class="w-20 h-20  flex items-center justify-start p-0">
                     <img src="image/logoMateus.png" alt="Logo" class="w-20 h-auto p-2 hover:animate-jump animate-once animate-duration-[6000ms] animate-ease-linear">
                 </div>
             </div>
             <!-- Navigation Links -->
-            <div class="hidden md:flex md:col-span-5   font-bold w-full">
+            <div class="hidden md:flex md:col-span-5   font-bold w-full ">
                 <a href="#"
                         class="text-portfoliopaleta-clara   h-full w-full  px-auto py-6 text-center hover:bg-portfoliopaleta-hover rounded-bl-full drop-shadow-md2 hover:animate-jump animate-duration-200 animate-ease-linear ">About</a>
                     <a href="#"
@@ -45,7 +45,7 @@
             </div>
         </div>
         <!-- Mobile Menu -->
-        <div id="menu" class=" font-semibold  justify-end flex md:hidden">
+        <div id="menu" class=" font-semibold  hidden justify-end flex md:hidden bg-portfoliopaleta-escura">
             <a href="#" class="block text-portfoliopaleta-clara px-2 py-2 hover:bg-portfoliopaleta-hover">About</a>
             <a href="#" class="block text-portfoliopaleta-clara px-2 py-2 hover:bg-portfoliopaleta-hover">Portfolio</a>
             <a href="#" class="block text-portfoliopaleta-clara px-2 py-2 hover:bg-portfoliopaleta-hover">Courses</a>
@@ -65,9 +65,9 @@
 
     <!------------------------ Corpo da Página ------------------------>
     <!---------Foto a esquerda, some em mobile------>
-    <div class="grid grid-cols-12 p4 mb-0">
-        <div class="hidden md:block md:col-span-4 " >
-            <img src="image/teste2.png" alt="" class="w-auto h-auto drop-shadow-md2 m-0">
+    <div class="grid grid-cols-12 p4 mb-0 ">
+        <div class="hidden md:block md:col-span-4 mt-32"  >
+            <img src="image/teste2.png" alt="" class="w-auto h-auto drop-shadow-md2 align-middle ">
 
         </div>
     <!-------- Informações sobre mim -------->
@@ -75,39 +75,39 @@
         <h1 class="text-2xl font-bold p-4"> Isso é um Teste</h1>
         <p class="text-lg"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus distinctio illo voluptates recusandae dolorem, provident eos asperiores! Fuga culpa sed enim vel excepturi autem. Culpa commodi eos beatae qui assumenda!</p>
         <h2 class="font-bold p-4 text-3xl w-auto">Outro titulo</h2>
+        h1 class="text-2xl font-bold p-4"> Isso é um Teste</h1>
+        <p class="text-lg"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus distinctio illo voluptates recusandae dolorem, provident eos asperiores! Fuga culpa sed enim vel excepturi autem. Culpa commodi eos beatae qui assumenda!</p>
+        <h2 class="font-bold p-4 text-3xl w-auto">Outro titulo</h2>
+        h1 class="text-2xl font-bold p-4"> Isso é um Teste</h1>
+        <p class="text-lg"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus distinctio illo voluptates recusandae dolorem, provident eos asperiores! Fuga culpa sed enim vel excepturi autem. Culpa commodi eos beatae qui assumenda!</p>
+        <h2 class="font-bold p-4 text-3xl w-auto">Outro titulo</h2>
     </div>
+    
 
 
     </div>
 <!------- Rodapé---------->
-<footer class="bg-portfoliopaleta-escura rounded-tr-full ">
-    
-    <div class="container mx-auto p-4 grid grid-cols-2 md:grid-cols-2 h-20">
-        <!---Texto Esquerdo-->
-        <div class="text-portfoliopaleta-clara  align-bottom p-5 col-span-1 flex">
-            <p class="ml-20 text-sm align-middle"></p>
+<footer class="bg-portfoliopaleta-escura h-auto">
+    <div class="container p-4 flex flex-col mx-auto md:flex-row justify-between items-center">
+        <!-- Texto Esquerdo -->
+        <div class="text-portfoliopaleta-clara text-left p-1">
+            <p class="ml-10 text-sm">Site produzido como parte de estudos de front-end com Tailwind</p>
         </div>
-        <!--Links Lado Direito-->
-        <div class="flex justify-end align-center mr-10 text-2xl col-span-1">
-            
-              <a href="#" target="_blank" class="text-portfoliopaleta-clara m-2 drop-shadow-md2 hover:animate-pulse" >
+        <!-- Links Lado Direito -->
+        <div class="flex space-x-4 mt-4 md:mt-0">
+            <a href="#" target="_blank" class="text-portfoliopaleta-clara drop-shadow-md2 hover:animate-pulse">
                 <i class="fab fa-instagram"></i>
-              </a>
-                         
-              <a href="#" target="_blank" class="text-portfoliopaleta-clara m-2 drop-shadow-md2 hover:animate-pulse" >
+            </a>
+            <a href="#" target="_blank" class="text-portfoliopaleta-clara drop-shadow-md2 hover:animate-pulse">
                 <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="#" target="_blank" class="text-portfoliopaleta-clara m-2 drop-shadow-md2 hover:animate-pulse">
+            </a>
+            <a href="#" target="_blank" class="text-portfoliopaleta-clara drop-shadow-md2 hover:animate-pulse">
                 <i class="fab fa-github"></i>
-              </a>
-
+            </a>
         </div>
-
-
     </div>
-
-
 </footer>
+
 
 </body>
 
