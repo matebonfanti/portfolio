@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.drop-shadow-md2 {
+    --tw-drop-shadow: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.76)) drop-shadow(0 2px 5px rgba(0, 0, 0, 0.74));
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+
+  
+
+  @keyframes pulse {
+    0% {
+      transform: translate(0);
+    }
+  
+    20% {
+      transform: translate(-2px, 2px);
+    }
+  
+    40% {
+      transform: translate(-2px, -2px);
+    }
+  
+    60% {
+      transform: translate(2px, 2px);
+    }
+  
+    80% {
+      transform: translate(2px, -2px);
+    }
+  
+    100% {
+      transform: translate(0);
+    }
+  }
+  .animate-pulse {
+    animation: pulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  
